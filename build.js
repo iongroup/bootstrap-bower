@@ -8,3 +8,4 @@ function umd(src, dest) {
 }
 
 umd('ui-bootstrap-tpls.js', 'ui-bootstrap-tpls-umd.js');
+umd('ui-bootstrap-tpls.min.js', 'ui-bootstrap-tpls-umd.min.js');
