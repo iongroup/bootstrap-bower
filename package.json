@@ -1,6 +1,6 @@
 {
   "name": "angular-ui-bootstrap",
-  "version": "2.1.4-p2",
+  "version": "2.1.4-p2d1",
   "description": "Bootstrap widgets for Angular",
   "main": "index.js",
   "homepage": "http://angular-ui.github.io/bootstrap/",
@@ -24,7 +24,7 @@
     "libumd": "^0.9.0"
   },
   "devDependencies": {
-    "angular-ui-bootstrap": "iongroup/angular-ui-bootstrap#2.1.4-p2",
+    "angular-ui-bootstrap": "iongroup/angular-ui-bootstrap#2.1.4-p2d1",
     "fs-extra": "^7.0.0"
   },
   "scripts": {
