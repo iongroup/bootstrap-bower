@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs-extra');
 const umdify = require('libumd');
 
 function umd(src, dest) {
@@ -7,5 +7,6 @@ function umd(src, dest) {
     }));
 }
 
-umd('ui-bootstrap-tpls.js', 'ui-bootstrap-tpls-umd.js');
-umd('ui-bootstrap-tpls.min.js', 'ui-bootstrap-tpls-umd.min.js');
+umd('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js', './dist/ui-bootstrap-tpls-umd.js');
+umd('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.min.js', './dist/ui-bootstrap-tpls-umd.min.js');
+fs.copyFileSync('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css', './dist/ui-bootstrap-csp.css');
